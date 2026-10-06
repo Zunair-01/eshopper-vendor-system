@@ -1,4 +1,3 @@
-```markdown
 # Eshopper
 
 "A vendor-oriented e-commerce management system designed for multi-seller environments. It enables vendors to list products, manage inventory, track orders, and monitor sales analytics efficiently. The admin panel provides complete control over vendors, payments, and system configurations. Integrated with secure payment gateways and real-time reporting, Eshopper ensures transparency, efficiency, and a professional experience for both sellers and customers."
@@ -116,6 +115,3 @@ php artisan serve
 
 Access the application in your browser at: **`http://127.0.0.1:8000`**
 
-```
-
-```
