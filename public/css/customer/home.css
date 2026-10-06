@@ -1,0 +1,79 @@
+/* Products Grid Styling */
+.page-heading {
+    margin-left: 15px;
+    font-size: 1.7rem;
+    color: #333;
+    margin-top: 70px;
+    font-weight: bold;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    background-color: #f4f7fa;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Product Image Styling */
+.product-image {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+/* Product Name Styling */
+.product-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Product Price Styling */
+.product-price {
+    font-size: 1rem;
+    color: #4070f4;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Add to Cart Button Styling */
+.add-to-cart-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 0;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .products-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}

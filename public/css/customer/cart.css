@@ -1,0 +1,174 @@
+h1 {
+    margin-bottom: 20px; /* Spacing below the title */
+    color: #333; /* Title color */
+}
+
+/* Cart Items Styles */
+.cart-items {
+    margin-top: 20px; /* Spacing above cart items */
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Align items vertically */
+    width: 100%; /* Full width */
+}
+
+/* Individual Cart Item Styles */
+.cart-item {
+    background-color: #ffffff; /* Background color for each item */
+    border: 1px solid #ddd; /* Border for item */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside item */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 15px; /* Spacing between items */
+    transition: box-shadow 0.3s; /* Shadow effect on hover */
+}
+
+.cart-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.cart-item img {
+    max-width: 100px; /* Image size */
+    margin-right: 15px; /* Spacing between image and text */
+    border-radius: 8px; /* Rounded image */
+}
+
+/* Item Details Styles */
+.item-details {
+    flex-grow: 1; /* Allow details to take up remaining space */
+}
+
+.cart-item h3 {
+    margin: 0; /* Remove default margin */
+    margin-bottom: 15px;
+}
+
+.cart-item p {
+    margin: 5px 0; /* Spacing around description */
+    color: #666; /* Description text color */
+    font-size: 1.2rem;
+}
+
+/* Price Styles */
+.price {
+    font-weight: bold; /* Bold price text */
+    color: #4070f4; /* Price color */
+    display: block; /* Block element for separation */
+    margin-top: 15px; /* Spacing above price */
+    font-size: 1.5rem;
+}
+
+/* Quantity Display */
+.quantity {
+    margin: 0 10px; /* Spacing around quantity */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Font size for quantity display */
+    color: #333; /* Color for quantity text */
+}
+
+.decrease-icon {
+    background-color: #dc3545;
+}
+
+.increase-icon {
+    background-color: #4070f4;
+}
+
+/* Remove Item Button */
+.remove-item {
+    background-color: #dc3545; /* Red color for remove button */
+    color: #ffffff; /* White text color */
+    padding: 8px 12px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.remove-item:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.cart-total {
+    margin-top: 20px; /* Spacing above total */
+    border-top: 1px solid #ddd; /* Top border for separation */
+    padding-top: 15px; /* Padding above total */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between total and button */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width */
+    font-size: 1.7rem;
+}
+
+.cart-total h4 {
+    margin: 0; /* Remove default margin */
+    color: #333; /* Color for total text */
+}
+
+.checkout-button {
+    margin-left: auto; /* Push checkout button to the right */
+    background-color: #4070f4; /* Primary color for checkout button */
+    color: #ffffff; /* White text color */
+    padding: 15px 45px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+    font-size: 1rem;
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
+}
+
+.checkout-button:hover {
+    background-color: #365eaa; /* Darker blue on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center; /* Center footer text */
+    padding: 20px; /* Padding for footer */
+    background-color: #333; /* Footer background color */
+    color: white; /* Footer text color */
+}
+
+.cart-icon-container {
+    position: relative; /* Allows absolute positioning of the badge */
+    display: inline-block; /* Required for proper positioning */
+}
+
+.cart-count {
+    position: absolute; /* Absolute positioning for the badge */
+    top: -5px; /* Adjust this value to move it higher or lower */
+    right: -10px; /* Adjust this value to move it left or right */
+    background-color: red; /* Badge background color */
+    color: white; /* Badge text color */
+    border-radius: 50%; /* Makes the badge round */
+    padding: 5px 8px; /* Padding for the badge */
+    font-size: 12px; /* Font size for the badge */
+    font-weight: bold; /* Bold text for the badge */
+}
+.total-details {
+    margin-bottom: 20px; /* Add space below total details */
+}
+
+.subtotal-amount{
+    font-size: 28px;
+}
+.tax-amount{
+    color: gray;
+}
+.delivery-amount{
+    color: gray;
+}
+.discount-amount{
+    color: gray;
+}
+.grand-total {
+    font-size: 30px; /* Large font size for grand total */
+    font-weight: bold; /* Bold text for emphasis */
+    color: #4070f4;/* Grand total color set to blue */
+}
+.checkout-button {
+    margin-left: 20px; /* Space between grand total and checkout button */
+}

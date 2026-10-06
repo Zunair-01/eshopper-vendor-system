@@ -1,0 +1,76 @@
+/* Form and Table Styling */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #4070f4;
+    font-weight: 600;
+}
+
+/* Table Styling */
+.table {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ffffff; /* White background for the table */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+.table th, .table td {
+    padding: 15px; /* Increased padding for table cells */
+    text-align: left; /* Align text to the left */
+}
+
+/* Header Styling */
+.table th {
+    background-color: #343a40; /* Dark background for table header */
+    color: white; /* White text for the header */
+}
+
+/* Row Striping */
+.table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray background for even rows */
+}
+
+/* Hover Effect */
+.table tr:hover {
+    background-color: #e9ecef; /* Light gray background on hover */
+}
+
+/* Modal Styling */
+.modal-header {
+    background-color: #4070f4; /* Header background color */
+    color: white; /* White text */
+}
+
+.modal-body {
+    background-color: #fafbfe; /* Light background for the modal body */
+}
+
+/* General Form Styling */
+.form-control {
+    border-radius: 5px; /* Rounded corners for form inputs */
+    border: 1px solid #ccc; /* Border color */
+    padding: 10px; /* Padding inside inputs */
+}
+
+.btn-primary {
+    background-color: #4070f4; /* Button color */
+    border: none; /* Remove border */
+}
+
+.btn-primary:hover {
+    background-color: #3050d4; /* Darker color on hover */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Secondary button color */
+    border: none; /* Remove border */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Darker color on hover */
+}

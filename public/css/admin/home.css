@@ -1,0 +1,63 @@
+.info-box {
+    background-color: rgba(248, 249, 250, 0.8); /* Light background with transparency */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    text-align: center; /* Center the text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s; /* Animation on hover */
+    position: relative; /* For icon positioning */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.info-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.data-number {
+    font-size: 48px; /* Larger font size for the numbers */
+    font-weight: bold;
+    color:rgb(102, 102, 102); /* Custom color for the numbers */
+    position: relative; /* Keep numbers above the background */
+    z-index: 1; /* Ensure numbers are above the background */
+}
+
+.total-customers::before,
+.total-orders::before,
+.total-sales::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the icons */
+    font-family: 'Font Awesome 5 Free'; /* Font Awesome */
+    font-weight: 900; /* Solid style */
+    font-size: 100px; /* Adjust size as needed */
+    color: rgba(0, 123, 255, 0.1); /* Low opacity color */
+    z-index: 0; /* Behind the text */
+}
+
+.total-customers::before {
+    content: '\f0c0'; /* Font Awesome users icon */
+}
+
+.total-orders::before {
+    content: '\f07a'; /* Font Awesome shopping cart icon */
+}
+
+.total-sales::before {
+    content: '\f155'; /* Font Awesome dollar sign icon */
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    position: relative; /* Positioning for text */
+    z-index: 1; /* Keep text above background */
+}
+
+/* Adding spacing for icons */
+.info-box h3 i {
+    margin-right: 10px;
+    font-size: 24px; /* Size of icons */
+    vertical-align: middle; /* Align icons vertically with text */
+}

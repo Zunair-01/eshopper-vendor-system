@@ -1,0 +1,77 @@
+.sidebar {
+    width: 150px; /* Fixed width for sidebar */
+    background-color: #fff; /* Sidebar background color */
+    padding: 20px; /* Padding for sidebar */
+    height: calc(100vh - 70px); /* Full height minus header */
+    position: fixed; /* Keep sidebar fixed */
+    top: 70px; /* Position below the header */
+    left: 0; /* Align to the left */
+    border-top: 1px solid #ccc; /* Top border */
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Vertical layout */
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 8px; /* Width for the scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Hide the scrollbar thumb */
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background-color: #f9f9f9; /* Background for the scrollbar track */
+}
+
+/* Category List Styling */
+.category-list {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    flex: 1; /* Flex-grow for flexibility */
+}
+
+.category-list li {
+    margin: 10px 0; /* Margin for spacing */
+    border-bottom: 1px solid #ccc; /* Bottom border for items */
+}
+
+.category-list a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color */
+    padding: 8px; /* Padding for items */
+    display: block; /* Block display for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition for background */
+    text-align: center; /* Center text */
+    font-weight: bold;
+}
+
+.category-list a:hover {
+    background-color: #f0f0f0; /* Background on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Space between links in vertical layout */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width on smaller screens */
+        position: relative; /* Relative position */
+        top: 0; /* Reset top position */
+        height: auto; /* Auto height */
+        padding: 10px; /* Reduced padding */
+    }
+
+    .main-content {
+        margin-left: 0; /* Reset margin */
+        padding: 10px; /* Reduced padding for smaller screens */
+    }
+}

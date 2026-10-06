@@ -1,0 +1,168 @@
+/* General Styling */
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Wrapper for sidebar and main content */
+.wrapper {
+    display: flex;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed; /* Fixed position for sidebar */
+    top: 0; /* Align at the top */
+    left: 0; /* Align at the left */
+    height: 100vh; /* Full height */
+    width: 260px; /* Fully expanded */
+    min-width: 260px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-right: 1px solid #e0e0e0;
+    transition: 0.25s ease-in-out;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Sidebar Navigation */
+.sidebar-nav {
+    padding: 1rem 0;
+    flex: 1 1 auto;
+}
+
+.sidebar-item {
+    position: relative;
+}
+
+.sidebar-nav > .sidebar-item {
+    margin-bottom: 15px;
+}
+
+.sidebar-link {
+    display: block;
+    padding: 0.6rem 1.6rem;
+    color: rgb(76, 76, 76);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+    text-decoration: none;
+}
+
+.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-left: 3px solid #4070f4;
+}
+
+.sidebar-link i {
+    font-size: 1.1rem;
+    margin-right: 0.75rem;
+    color: rgb(76, 76, 76);
+}
+
+/* Sidebar Footer */
+.sidebar-footer {
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-footer a {
+    display: block;
+    padding: 0.6rem 1.6rem;
+    color: rgb(76, 76, 76);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar-footer a:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-left: 3px solid #4070f4;
+}
+
+/* Main Content */
+.main {
+    min-height: 100vh; /* Ensures content height */
+    margin-left: 260px; /* Space for sidebar */
+    padding-top: 70px; /* Space for fixed header */
+    width: 100%;
+    transition: 0.35s ease-in-out;
+}
+
+/* Fixed Header */
+.top-header {
+    position: fixed; /* Fixed position for header */
+    top: 0; /* Align at the top */
+    left: 260px; /* Align with sidebar */
+    right: 0; /* Stretch to the right */
+    height: 70px; /* Set header height */
+    background-color: #ffffff; /* Header background color */
+    padding: 1rem 2rem; /* Padding for the header */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    z-index: 999; /* Ensure header is above content */
+}
+
+/* Header Container */
+.container {
+    max-width: 1200px; /* Maximum width for the header content */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Search Input Styles */
+.search-wrapper {
+    position: relative; /* Positioning context for the icon */
+}
+
+.search-icon {
+    position: absolute; /* Absolute positioning for the icon */
+    left: 10px; /* Space from the left */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for centering */
+    color: #aaa; /* Color for the icon */
+    pointer-events: none; /* Prevent clicks on the icon */
+}
+
+.search-input {
+    padding: 0.6rem 2.5rem; /* Add padding for left side for the icon */
+    border: 0.1px solid #ccc; /* Border color */
+    border-radius: 25px; /* Rounded corners */
+    width: 800px; /* Width of the input */
+    outline: none; /* Remove outline on focus */
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #4070f4; /* Change border color on focus */
+}
+
+/* User Profile */
+.user-profile {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+.profile-link {
+    color: #333; /* Text color for profile link */
+    font-size: 1rem; /* Font size */
+    text-decoration: none; /* Remove underline */
+    margin-left: 20px; /* Space between icon and text */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.profile-link i {
+    margin-right: 0.5rem; /* Space between icon and text */
+}
+
+.profile-link:hover {
+    color: #4070f4; /* Change color on hover */
+}

@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.payment-container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.order-summary {
+    flex: 1;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ddd;
+}
+
+.order-summary h3 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 1.7rem;
+}
+
+.order-summary p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.payment-form {
+    flex: 1;
+    padding: 20px;
+}
+
+.payment-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payment-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.payment-form input,
+.payment-form select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.small-input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.payment-form button {
+    width: 95%;
+    padding: 10px;
+    background-color: #4070f4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.payment-form button:hover {
+    background-color: #365eaa; /* Darker blue on hover */
+}
+
+#orderSuccessMessage {
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}

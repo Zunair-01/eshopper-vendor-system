@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fa; /* Light background color */
+}
+
+/* Container Styling */
+.container {
+    display: flex; /* Use flexbox for layout */
+}
+
+/* Logo Styling */
+.logo {
+    font-size: larger;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.7rem;
+    color: #4070f4;
+}
+
+/* Main Content Styling */
+.main-content {
+    flex-grow: 1; /* Allow main content to fill remaining space */
+    padding: 20px; /* Padding for main content */
+    margin-left: 160px; /* Add margin to account for the fixed sidebar width */
+}
+
+/* Header Styling */
+.top-header {
+    background-color: #fff; /* Header background color */
+    color: #333; /* Header text color */
+    height: 70px; /* Header height */
+    padding: 0 20px; /* Horizontal padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space between logo and links */
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Stick to the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure header is above other content */
+}
+
+.search-container {
+    position: relative; /* For absolute positioning of the icon */
+    width: 100%; /* Full width */
+}
+/* Search Input Styles */
+.search-wrapper {
+    flex-grow: 1; /* Allow search wrapper to grow */
+    margin: 0 20px; /* Margin for spacing */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center the search input */
+}
+
+.search-input {
+    padding: 10px 15px; /* More padding for comfort */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 25px; /* Rounded corners */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Maximum width for search */
+    outline: none; /* Remove outline on focus */
+    transition: border-color 0.3s ease; /* Smooth transition */
+
+}
+
+.search-input:focus {
+    border-color: #4070f4; /* Change border color on focus */
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Center links vertically */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Space between links */
+}
+
+.nav-links a {
+    color: #333; /* Link text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Link font size */
+    padding: 10px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition for background and color */
+    margin-right: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+    color: #4070f4; /* Change color on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center; /* Center footer text */
+    padding: 20px; /* Padding for footer */
+    background-color: #333; /* Footer background color */
+    color: white; /* Footer text color */
+}
+
+
+
+

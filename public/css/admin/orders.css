@@ -1,0 +1,15 @@
+.status-completed {
+    background-color: #28a745;  /* Green background */
+    color: white;                /* White text */
+    padding: 5px 10px;          /* Padding for a button shape */
+    border-radius: 5px;         /* Rounded corners */
+    text-align: center;          /* Center text */
+}
+
+.status-pending {
+    background-color: #ffc107;  /* Yellow background */
+    color: white;                /* White text */
+    padding: 5px 10px;          /* Padding for a button shape */
+    border-radius: 5px;         /* Rounded corners */
+    text-align: center;          /* Center text */
+}
